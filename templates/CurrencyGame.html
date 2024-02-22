@@ -3,31 +3,24 @@
 <link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
 </head>
 <body>
-<div id="container">
-  <h1>Currency Game </h1>
-  <div id="Currency Game">
-    <p>Insert Guess in ILS (Dollar 1-100) </p>
+    <div id="container">
+      <h1>Currency Game </h1>
+      <div id="Currency Game">
+        <p>Insert Guess in ILS (Dollar 1-100) </p>
 
-	 <form action="/result" method="POST">
-         <p id="diff" > diffucilty {{ diff }} </p>
-            <p>
-    <input id="Guess How much in ILS" name ="Guess" type="text" placeholder="Dollar to ILS Guess">
-<p>
-        <input type="hidden" name="name" value="CurrencyGame" />
-<p></p>
-         <a type="Submit" class="file_submit">
-   <button>Submit Guess</button>
-</a>
+         <form action="/result" method="POST">
+             <p id="diff" > diffucilty {{ diff }} </p>
+             <p>
+             <input id="Guess How much in ILS" name ="Guess" type="text" placeholder="Dollar to ILS Guess">
+             <p>
+            <input type="hidden" name="name" value="CurrencyGame" />
+             <p></p>
+             <a type="Submit" class="file_submit">
+                 <button>Submit Guess</button>
+             </a>
 
-    </form>
-  </div>
-  <!--calculator end-->
-  </div>
-  <!--totalTip end-->
-
-
-<!--container end-->
-
-<!-- <script type="text/javascript" src="tipcalculator.js"></script> -->
+          </form>
+      </div>
+    </div>
 </body>
 </html>

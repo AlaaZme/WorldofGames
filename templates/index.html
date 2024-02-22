@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
+
 </head>
 <body>
 <div id="container">
@@ -14,19 +15,25 @@
          <select id="name" name="name">
             <option value="GuessGame">  Guess Game</option>
           <!--  <option value="Mem">  Memory Game</option>  -->
-            <option value="CurrencyGame">  Currency Game</option>
+              <option value="CurrencyGame">  Currency Game</option>
+              <option value="MemoryGame">  Memory Game</option>
         </select>
-    <p>Insert Diffculty level</p>
-    <input id="diff" name="diff" type="text" placeholder="Insert Diffculty level">
-<a type="Submit" class="file_submit">
-   <button>Go</button>
-</a>
-    </form>
+          <p>Insert Diffculty level</p>
+        <input id="diff" name="diff" type="text" placeholder="Insert Diffculty level"/>
+         <a type="Submit" class="file_submit">
+            <button>Go</button>
+         </a>
+     </form>
+      <form action ="Scores">
+            <a type="Submit" class="file_submit">
+                  <button>Show my Scores</button>
+            </a>
+       </form>
+
+
   </div>
-  <!--calculator end-->
+
   </div>
-  <!--totalTip end-->
-<!--container end-->
-<!-- <script type="text/javascript" src="tipcalculator.js"></script> -->
+
 </body>
 </html>

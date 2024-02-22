@@ -11,17 +11,14 @@
      <h3 style = "color: red;">Rest:   {{res_dict["Result"]}}</h3>
        {% endif %}
    {%if res_dict["Result"] == "Success" %}
-     <h3 style = "color: Green;">Rest:   {{res_dict["Result"]}}</h3>
+     <h3 style = "color: Green;">Game Result:   {{res_dict["Result"]}}</h3>
+     <h3 style = "color: Green;">Total Score:   {{res_dict["score"]}}</h3>
        {% endif %}
 <form action="/">
 <a type="Submit">
-   <button>Replay</button>
+   <button>Re Try</button>
 </a>
 </form>
-  <!--calculator end-->
   </div>
-  <!--totalTip end-->
-<!--container end-->
-<!-- <script type="text/javascript" src="tipcalculator.js"></script> -->
 </body>
 </html>

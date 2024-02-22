@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
+</head>
+<body>
+    <div id="container">
+      <h1>Memory Game </h1>
+
+
+   <button type="button" id="Alert">Show secret Number</button>
+        <p></p>
+   <div id="MemoryGame1"> </div>
+
+        <p>Enter the Numbers you saw </p>
+
+         <form action="/result" method="POST">
+             <p id="diff" > diffucilty {{ diff }} </p>
+             <p>
+             <input id="Enter the Numbers you saw" name ="Guess" type="text" placeholder="Enter numbers with space seperator">
+             <p>
+            <input type="hidden" name="name" value="MemoryGame" />
+             <input type="hidden" name="name" value={{secret_list}} />
+             <p></p>
+             <a type="Submit" class="file_submit">
+                 <button>Submit Guess</button>
+             </a>
+
+          </form>
+      </div>
+<script>
+function Alert(){
+
+
+
+   document.getElementById('MemoryGame1').innerHTML = {{secret_list}}
+
+
+setTimeout(() => document.getElementById("MemoryGame1").remove(), 1000)
+
+}
+
+document.getElementById("Alert").onclick = function() {
+  Alert();
+
+};
+
+
+</script>
+</body>
+</html>
