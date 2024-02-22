@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
+</head>
+<body>
+<div id="container">
+  <h1>Game Result</h1>
+     <h3>Guessed Number:  {{res_dict["Guessed"]}}</h3>
+     <h3>Secret Number: {{res_dict["Secret"]}}</h3>
+      {%if res_dict["Result"] == "Fail" %}
+     <h3 style = "color: red;">Rest:   {{res_dict["Result"]}}</h3>
+       {% endif %}
+   {%if res_dict["Result"] == "Success" %}
+     <h3 style = "color: Green;">Rest:   {{res_dict["Result"]}}</h3>
+       {% endif %}
+<form action="/">
+<a type="Submit">
+   <button>Replay</button>
+</a>
+</form>
+  <!--calculator end-->
+  </div>
+  <!--totalTip end-->
+<!--container end-->
+<!-- <script type="text/javascript" src="tipcalculator.js"></script> -->
+</body>
+</html>

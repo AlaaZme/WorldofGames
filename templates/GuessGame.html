@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
+</head>
+<body>
+<div id="container">
+  <h1>Welcome to Blind Guess Game </h1>
+  <div id="GuessGame">
+    <p>Test your Luck Insert Guess</p>
+	 <form action="/result" method="POST">
+         <p id="diff" > diffucilty {{ diff }} </p>
+            <p>
+           <input type="hidden" name="name" value="GuessGame" />
+<p></p>
+    <input id="Guess" name ="Guess" type="text" placeholder="Insert Guess">
+<p>
+         <a type="Submit" class="file_submit">
+   <button>Submit Guess</button>
+</a>
+
+    </form>
+  </div>
+  <!--calculator end-->
+  </div>
+  <!--totalTip end-->
+
+
+<!--container end-->
+
+<!-- <script type="text/javascript" src="tipcalculator.js"></script> -->
+</body>
+</html>
