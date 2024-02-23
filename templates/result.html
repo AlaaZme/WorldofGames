@@ -5,18 +5,18 @@
 <body>
 <div id="container">
   <h1 class="title">Game Result</h1>
-     <h3>Guessed Number:  {{res_dict["Guessed"]}}</h3>
-     <h3>Secret Number: {{res_dict["Secret"]}}</h3>
+     <h2>Guessed Number:  {{res_dict["Guessed"]}}</h2>
+     <h2>Secret Number: {{res_dict["Secret"]}}</h2>
       {%if res_dict["Result"] == "Fail" %}
-     <h3 style = "color: red;">Rest:   {{res_dict["Result"]}}</h3>
+     <h2 style = "color: red;">Rest:   {{res_dict["Result"]}}</h2>
        {% endif %}
    {%if res_dict["Result"] == "Success" %}
-     <h3 style = "color: Green;">Game Result:   {{res_dict["Result"]}}</h3>
-     <h3 style = "color: Green;">Total Score:   {{res_dict["score"]}}</h3>
+     <h2 style = "color: Green;">Game Result:   {{res_dict["Result"]}}</h2>
+     <h2 style = "color: Green;">Total Score:   {{res_dict["score"]}}</h2>
        {% endif %}
 <form action="/">
-<a type="Submit">
-   <button>Re Try</button>
+<a type="Submit" class="prod_home">
+   <button class="btn">Play Again</button>
 </a>
 </form>
   </div>

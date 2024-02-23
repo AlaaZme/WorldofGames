@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd82851-1e8c-43a7-a2c6-8f950fd104fd" name="Changes" comment="initial push">
+    <list default="true" id="7dd82851-1e8c-43a7-a2c6-8f950fd104fd" name="Changes" comment="score to dict addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Guess_Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Guess_Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainScores.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainScores.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemoryGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CurrencyGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CurrencyGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ERROR.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ERROR.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/GuessGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GuessGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/MemoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MemoryGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Scores.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Scores.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/world_of_games_Flask.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.Guess_Game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MainScores.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MemoryGame.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Score.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Utils.executor&quot;: &quot;Run&quot;,
-    &quot;Python.load_game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AlaaZme1/PycharmProjects/WorldofGames&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Guess_Game.executor": "Run",
+    "Python.MainScores.executor": "Run",
+    "Python.MemoryGame.executor": "Run",
+    "Python.Score.executor": "Run",
+    "Python.Utils.executor": "Run",
+    "Python.load_game.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/AlaaZme1/PycharmProjects/WorldofGames"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AlaaZme1\PycharmProjects\WorldofGames" />
@@ -108,11 +103,20 @@
       <option name="project" value="LOCAL" />
       <updated>1708596108197</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="score to dict addition">
+      <option name="closed" value="true" />
+      <created>1708683452121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708683452121</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial push" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial push" />
+    <MESSAGE value="score to dict addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="score to dict addition" />
   </component>
 </project>
