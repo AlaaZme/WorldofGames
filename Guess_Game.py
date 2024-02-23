@@ -13,7 +13,7 @@ def generate_number(diff):
 
 def compare_results(secret, user_num, diff):
     if secret == user_num:
-        Score.add_Score(diff)
+        Score.add_new_Score(diff, "GuessGame")
         return "Success"
     else:
         return "Fail"

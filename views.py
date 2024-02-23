@@ -26,8 +26,8 @@ def ERROR():
 @views.route("/Scores")
 def Scores():
     try:
-        score = MainScores.score_server()
-        return render_template('Scores.html', score=score)
+        score_list = MainScores.get_scores()
+        return render_template('Scores.html', score=score_list)
     except Exception as e:
         return render_template('ERROR.html')
 
@@ -63,7 +63,7 @@ def result():
             res = MemoryGame.play(output['Guess'], int(diff),secret_list)
 
         res_dict = {"Guessed": f"{output['Guess']}", "Secret": res[0], "Result": res[1],
-                    "score": MainScores.score_server()}
+                    "score": MainScores.get_score_for_game(output['name'])}
 
         return render_template('result.html', res_dict=res_dict)
     except Exception as e:

@@ -4,7 +4,7 @@
 </head>
 <body>
     <div id="container">
-      <h1>Memory Game </h1>
+      <h1 class="title">Memory Game </h1>
 
 
    <button type="button" id="Alert">Show secret Number</button>
@@ -28,19 +28,13 @@
           </form>
       </div>
 <script>
-function Alert(){
-
-
-
-   document.getElementById('MemoryGame1').innerHTML = {{secret_list}}
-
-
-setTimeout(() => document.getElementById("MemoryGame1").remove(), 1000)
-
+    function Alert(){
+    document.getElementById('MemoryGame1').innerHTML = {{secret_list}}
+    setTimeout(() => document.getElementById("MemoryGame1").remove(), 1000)
 }
 
-document.getElementById("Alert").onclick = function() {
-  Alert();
+    document.getElementById("Alert").onclick = function() {
+      Alert();
 
 };
 

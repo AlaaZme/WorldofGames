@@ -1,6 +1,6 @@
 import random
 from currency_converter import CurrencyConverter
-
+import Score
 
 def play(number,difficulty):
     print("Game Description:\n "
@@ -13,6 +13,7 @@ def play(number,difficulty):
     secret_amount_interval = get_money_interval(difficulty)
     print(secret_amount_interval,guessed_number)
     if secret_amount_interval[0] <= guessed_number <= secret_amount_interval[1]:
+        Score.add_new_Score(diff, "CurrencyGame")
         return secret_amount_interval[0],"Success"
     else:
         return secret_amount_interval[0],"Fail"
