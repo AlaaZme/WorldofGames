@@ -1,0 +1,4 @@
+MemoryGame,0
+GuessGame,0
+CurrencyGame,0
+total,0

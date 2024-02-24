@@ -1,6 +1,6 @@
 import Utils
 import MainScores
-
+import os
 '''
 def add_Score(diff):
     POINTS_OF_WINNING = (int(diff) * 3) + 5
@@ -19,6 +19,13 @@ def add_Score(diff):
         with open(Utils.SCORES_FILE_NAME, "w") as score_file:
             score_file.write(POINTS_OF_WINNING)
 '''
+def make_scores_file():
+    with open(Utils.NEW_SCORES_FILE_NAME, "w") as file:
+        file.write("MemoryGame:0\n")
+        file.write("GuessGame:0\n")
+        file.write("CurrencyGame:0\n")
+        file.write("total:0\n")
+
 
 def modify_score(Game_name, newscore):
     score_dict = MainScores.get_scores()

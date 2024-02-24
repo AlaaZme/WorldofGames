@@ -3,7 +3,7 @@ import Guess_Game
 import CurrencyGame
 import MainScores
 import MemoryGame
-from time import sleep
+
 
 views = Blueprint(__name__, 'views')
 diff = 0
@@ -13,6 +13,7 @@ secret_list = []
 @views.route("/")
 def home():
     try:
+        #Score.make_scores_file()
         return render_template('index.html')
     except Exception as e:
         return render_template('ERROR.html')
