@@ -8,7 +8,7 @@
      <h2>Guessed Number:  {{res_dict["Guessed"]}}</h2>
      <h2>Secret Number: {{res_dict["Secret"]}}</h2>
       {%if res_dict["Result"] == "Fail" %}
-     <h2 style = "color: red;">Rest:   {{res_dict["Result"]}}</h2>
+     <h2 style = "color: red;">Result:   {{res_dict["Result"]}}</h2>
        {% endif %}
    {%if res_dict["Result"] == "Success" %}
      <h2 style = "color: Green;">Game Result:   {{res_dict["Result"]}}</h2>
@@ -16,6 +16,9 @@
        {% endif %}
 <form action="/">
    <button class="prod_home">Play Again</button>
+</form>
+    <form action="/Scores">
+   <button class="prod_home">Show Scores</button>
 </form>
   </div>
 </body>
