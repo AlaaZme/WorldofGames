@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd82851-1e8c-43a7-a2c6-8f950fd104fd" name="Changes" comment="CSS">
-      <change beforePath="$PROJECT_DIR$/.idea/WorldofGames.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WorldofGames.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/load_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenuim.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenuim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CurrencyGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CurrencyGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ERROR.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ERROR.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/GuessGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GuessGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/MemoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MemoryGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Scores.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Scores.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
     </list>
@@ -47,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.Guess_Game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MainScores.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MemoryGame.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Score.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Utils.executor&quot;: &quot;Run&quot;,
-    &quot;Python.load_game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AlaaZme1/PycharmProjects/WorldofGames&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Guess_Game.executor": "Run",
+    "Python.MainScores.executor": "Run",
+    "Python.MemoryGame.executor": "Run",
+    "Python.Score.executor": "Run",
+    "Python.Utils.executor": "Run",
+    "Python.load_game.executor": "Run",
+    "Python.selenuim.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/AlaaZme1/PycharmProjects/WorldofGames"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AlaaZme1\PycharmProjects\WorldofGames" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708729252489</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CSS">
+      <option name="closed" value="true" />
+      <created>1708770830005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770830005</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

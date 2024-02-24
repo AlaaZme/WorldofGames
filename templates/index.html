@@ -1,13 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="{{  url_for('static' , filename='css/main.css')  }}">
-
 </head>
 <body>
 <div id="container">
   <h1 id="title" class="title">Games Selection</h1>
   <div id="home">
-    <p>Select you Game from the following List</p>
+    <p>Chose a Game from the list below</p>
 	 <form action = "/selectedgame" method="POST">
          <h3></h3>
          <select class="prod" id="name" name="name">
@@ -17,21 +16,16 @@
               <option value="MemoryGame">  Memory Game</option>
         </select>
          <h3></h3><h3></h3><h3></h3>
-          <p>Insert Diffculty level</p>
+          <p>Insert Difficulty level</p>
         <input class="lginp" id="diff" name="diff" type="text" placeholder="Insert Diffculty level text"/>
          <p></p>
          <h3></h3>
-
-            <button class="prod">Go</button>
+         <button class="prod">Go</button>
      </form>
       <form action ="Scores">
-                  <button class="prod">Show my Scores</button>
-       </form>
-
-
+             <button class="prod">Scores</button>
+      </form>
   </div>
-
   </div>
-
 </body>
 </html>
