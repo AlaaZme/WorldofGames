@@ -6,7 +6,7 @@
     <div id="container">
       <h1 class="title">Memory Game </h1>
 
-<a class="prod" id="Alert">
+<a class="prod_long" id="Alert">
    <button class="btn" type="button" >Show secret Number</button>
     </a>
         <p></p>
@@ -16,14 +16,11 @@
 
          <form action="/result" method="POST">
              <p id="diff" > diffucilty {{ diff }} </p>
-             <input class="lginp" id="Enter the Numbers you saw" name ="Guess" type="text" placeholder="Enter numbers with space seperator">
+             <input class="lginp_long" id="Enter the Numbers you saw" name ="Guess" type="text" placeholder="Enter numbers with space seperator">
              <p>
             <input type="hidden" name="name" value="MemoryGame" />
              <p></p>
-             <a type="Submit" class="prod">
-                 <button class="btn">Submit Guess</button>
-             </a>
-
+                 <button class="prod">Submit Guess</button>
           </form>
       </div>
 <script>
@@ -31,13 +28,9 @@
     document.getElementById('Alert').innerHTML = {{secret_list}}
     setTimeout(() => document.getElementById("Alert").remove(), 1000)
 }
-
     document.getElementById("Alert").onclick = function() {
       Alert();
-
 };
-
-
 </script>
 </body>
 </html>
