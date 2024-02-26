@@ -1,7 +1,4 @@
-from flask import render_template
-
 import Utils
-
 
 
 def score_server():
@@ -27,19 +24,3 @@ def get_scores():
 def get_score_for_game(name):
     score_dict = get_scores()
     return score_dict[name]
-
-
-
-
-'''
-@views.route("/Scores")
-def Scores():
-    try:
-        score = MainScores.score_server()
-        return render_template('Scores.html', score=score)
-    except Exception as e:
-        return render_template('ERROR.html')
-
-
-
-'''

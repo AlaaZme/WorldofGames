@@ -2,8 +2,6 @@ import random
 import Score
 
 def play(number,difficulty):
-    print("Game Description:\n"
-          "Guess the number between 1 - and Difficulty you entered")
     secret_number = generate_number(difficulty)
     return secret_number,compare_results(number, secret_number,difficulty)
 

@@ -1,19 +1,20 @@
-
-#SCORES_FILE_NAME = 'C:\\Users\\AlaaZme1\\Documents\\WorldofGames\\My_Scores'
-#NEW_SCORES_FILE_NAME = 'C:\\Users\\AlaaZme1\\Documents\\WorldofGames\\New_score.txt'
-
-
-#SCORES_FILE_NAME = '/'
 NEW_SCORES_FILE_NAME = 'New_score.txt'
 BAD_RETURN_CODE = 808
 
-def Screen_cleaner():
-    '''
-    function Alert(){
-    document.getElementById('MemoryGame1').innerHTML = {{secret_list}}
-    setTimeout(() => document.getElementById("MemoryGame1").remove(), 1000)
-}
+class Game:
+    def __init__(self):
+        self.Diffuclty = None
+        self.secret_list = []
 
-    :return:
-    '''
-    print("cleaned screen")
+    def set_secret_list(self,secret_list):
+        self.secret_list = secret_list
+
+    def get_secret_list(self):
+        return self.secret_list
+
+    def set_Diffuclty(self,diff):
+        self.Diffuclty = diff
+
+    def get_Diffuclty(self):
+        return self.Diffuclty
+

@@ -1,35 +1,10 @@
 import Utils
 import MainScores
-import os
-'''
-def add_Score(diff):
-    POINTS_OF_WINNING = (int(diff) * 3) + 5
-    print(POINTS_OF_WINNING)
-    try:
-        with open(Utils.SCORES_FILE_NAME, "a+") as score_file:
-            score_file.seek(0)
-            score = score_file.read()
-            score_file.truncate(0)
-            if not score:
-                score = 0
-            new_score = POINTS_OF_WINNING + int(score)
-            score_file.write(str(new_score))
-    except Exception as e:
-        print("serving score failed New file")
-        with open(Utils.SCORES_FILE_NAME, "w") as score_file:
-            score_file.write(POINTS_OF_WINNING)
-'''
-def make_scores_file():
-    with open(Utils.NEW_SCORES_FILE_NAME, "w") as file:
-        file.write("MemoryGame:0\n")
-        file.write("GuessGame:0\n")
-        file.write("CurrencyGame:0\n")
-        file.write("total:0\n")
 
 
-def modify_score(Game_name, newscore):
+def modify_score(game_name, newscore):
     score_dict = MainScores.get_scores()
-    score_dict[Game_name] = newscore
+    score_dict[game_name] = newscore
     return score_dict
 
 

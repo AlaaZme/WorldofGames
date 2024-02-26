@@ -3,15 +3,13 @@ from currency_converter import CurrencyConverter
 import Score
 
 def play(number,difficulty):
-    print("Game Description:\n "
-          "Currency Roulette - try and guess the value of a random amount of USD in ILS\n"
-          "max_difficulty = 5 -- guess the exact number")
+
     max_difficulty = 5
     guessed_number = number
     if difficulty > max_difficulty:
         difficulty = max_difficulty
     secret_amount_interval = get_money_interval(difficulty)
-    print(secret_amount_interval,guessed_number)
+
     if secret_amount_interval[0] <= guessed_number <= secret_amount_interval[1]:
         Score.add_new_Score(diff, "CurrencyGame")
         return secret_amount_interval[0],"Success"
