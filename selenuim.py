@@ -8,7 +8,7 @@ while "Fail" in res:
     try_times +=1
     dr2 = webdriver.Chrome()
     #dr = webdriver.Edge()
-    dr2.get("http://localhost:81")
+    dr2.get("http://localhost:5000")
     dr2.find_element(by="xpath" , value="//*[@id=\"name\"]/option[1]").click()
     dr2.find_element(by="id" , value="diff").send_keys("4")
     dr2.find_element(by="xpath", value="//*[@id=\"home\"]/form[1]/button").click()

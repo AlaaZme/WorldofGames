@@ -44,9 +44,9 @@ def result():
         guess = request.form.to_dict()
         if new_game.get_name() == "GuessGame":
             res = Guess_Game.play(int(f"{guess['Guess']}"), int(new_game.get_Diffuclty()))
-        if new_game.get_name() == "CurrencyGame":
+        elif new_game.get_name() == "CurrencyGame":
             res = CurrencyGame.play(int(f"{guess['Guess']}"), int(new_game.get_Diffuclty()))
-        if new_game.get_name() == "MemoryGame":
+        elif new_game.get_name() == "MemoryGame":
             res = MemoryGame.play(guess['Guess'], int(new_game.get_Diffuclty()), new_game.get_secret_list())
 
         res_dict = {"Guessed": f"{guess['Guess']}", "Secret": res[0], "Result": res[1],
