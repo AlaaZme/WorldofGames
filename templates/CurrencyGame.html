@@ -9,10 +9,9 @@
         <p>Insert Guess in ILS (Dollar 1-100) </p>
 
          <form action="/result" method="POST">
-             <p id="diff" > diffucilty {{ diff }} </p>
+             <p id="diff" > diffucilty {{ game.get_Diffuclty() }} </p>
              <input class="lginp" id="Guess How much in ILS" name ="Guess" type="text" placeholder="Dollar to ILS Guess">
              <p>
-            <input type="hidden" name="name" value="CurrencyGame" />
              <p></p>
                  <button class="prod">Submit Guess</button>
           </form>

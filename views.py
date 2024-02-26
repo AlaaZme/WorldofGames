@@ -1,29 +1,20 @@
-from flask import Blueprint, render_template, url_for, request
+from flask import Blueprint, render_template, request
 import Guess_Game
 import CurrencyGame
 import MainScores
 import MemoryGame
-import Utils
+from Utils import Game
 
-
-new_game = Utils.Game()
+new_game = Game()
 views = Blueprint(__name__, 'views')
 
 
-# GuessGame = Blueprint(__name__,'GuessGame ')
 @views.route("/")
 def home():
     try:
-        #Score.make_scores_file()
         return render_template('index.html')
     except Exception as e:
         return render_template('ERROR.html')
-
-
-@views.route("/ERROR")
-def ERROR():
-    return render_template('ERROR.html')
-
 
 @views.route("/Scores")
 def Scores():
@@ -37,38 +28,29 @@ def Scores():
 @views.route("/selectedgame", methods=['POST'])
 def selectedgame():
     try:
-        output = request.form.to_dict()
-        new_game.set_Diffuclty(output['diff'])
-        diff = new_game.get_Diffuclty()
-
-        if output['name'] == "GuessGame":
-            return render_template('GuessGame.html', diff=diff)
-        elif output['name'] == "CurrencyGame":
-            return render_template('CurrencyGame.html', diff=diff)
-        elif output['name'] == "MemoryGame":
-            secret_list = MemoryGame.generate_sequence(int(diff))
-            new_game.set_secret_list(secret_list)
-            return render_template('MemoryGame.html', diff=diff, secret_list=secret_list)
+        new_game.set_name(request.form.to_dict()['name'])
+        new_game.set_Diffuclty(request.form.to_dict()['diff'])
+        if new_game.get_name() == "MemoryGame":
+            new_game.set_secret_list(MemoryGame.generate_sequence(int(new_game.get_Diffuclty())))
+        return render_template(f"{new_game.get_name()}.html", game=new_game)
     except Exception as e:
         return render_template('ERROR.html')
+
 
 @views.route("/result", methods=['POST'])
 def result():
     try:
-        output = request.form.to_dict()
-        diff = new_game.get_Diffuclty()
-        res_dict = {}
-        if output['name'] == "GuessGame":
-            res = Guess_Game.play(int(f"{output['Guess']}"), int(diff))
-        if output['name'] == "CurrencyGame":
-            res = CurrencyGame.play(int(f"{output['Guess']}"), int(diff))
-        if output['name'] == "MemoryGame":
-            res = MemoryGame.play(output['Guess'], int(diff),new_game.get_secret_list())
+        res = []
+        guess = request.form.to_dict()
+        if new_game.get_name() == "GuessGame":
+            res = Guess_Game.play(int(f"{guess['Guess']}"), int(new_game.get_Diffuclty()))
+        if new_game.get_name() == "CurrencyGame":
+            res = CurrencyGame.play(int(f"{guess['Guess']}"), int(new_game.get_Diffuclty()))
+        if new_game.get_name() == "MemoryGame":
+            res = MemoryGame.play(guess['Guess'], int(new_game.get_Diffuclty()), new_game.get_secret_list())
 
-        res_dict = {"Guessed": f"{output['Guess']}", "Secret": res[0], "Result": res[1],
-                    "score": MainScores.get_score_for_game(output['name'])}
-
+        res_dict = {"Guessed": f"{guess['Guess']}", "Secret": res[0], "Result": res[1],
+                    "score": MainScores.get_score_for_game(new_game.get_name())}
         return render_template('result.html', res_dict=res_dict)
     except Exception as e:
-        print(e)
         return render_template('ERROR.html')

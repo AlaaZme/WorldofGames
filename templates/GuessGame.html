@@ -6,11 +6,10 @@
 <div id="container">
   <h1 class="title">Blind Guess Game </h1>
   <div id="GuessGame">
-    <p>Guess a Number between 1 and {{ diff }}</p>
+    <p>Guess a Number between 1 and {{ game.get_Diffuclty() }}</p>
 	 <form action="/result" method="POST">
-         <p id="diff" > diffucilty {{ diff }} </p>
+         <p id="diff" > diffucilty {{ game.get_Diffuclty() }} </p>
             <p>
-           <input type="hidden" name="name" value="GuessGame" />
      <p></p>
     <input class="lginp" id="Guess" name ="Guess" type="text" placeholder="Insert Guess">
          <h3></h3>

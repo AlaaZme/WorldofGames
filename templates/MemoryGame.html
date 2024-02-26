@@ -15,17 +15,16 @@
         <p>Enter the Numbers you saw </p>
 
          <form action="/result" method="POST">
-             <p id="diff" > diffucilty {{ diff }} </p>
+             <p id="diff" > diffucilty {{ game.get_Diffuclty() }} </p>
              <input class="lginp_long" id="Enter the Numbers you saw above" name ="Guess" type="text" placeholder="numbers with space seperator">
              <p>
-            <input type="hidden" name="name" value="MemoryGame" />
              <p></p>
                  <button class="prod">Submit Guess</button>
           </form>
       </div>
 <script>
     function Alert(){
-    document.getElementById('Alert').innerHTML = {{secret_list}}
+    document.getElementById('Alert').innerHTML = {{ game.get_secret_list() }}
     setTimeout(() => document.getElementById("Alert").remove(), 1000)
 }
     document.getElementById("Alert").onclick = function() {
